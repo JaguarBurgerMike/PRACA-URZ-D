@@ -3,11 +3,10 @@ import re
 import json
 import os
 
-URL = "https://bip.malopolska.pl/umbochnia,m,276530,nabor-na-stanowiska-urzednicze-konkursy.html"
-
 DB_FILE = "database.json"
 
-print("PLIK ISTNIEJE:", os.path.exists(DB_FILE))
+with open("sites.json", "r", encoding="utf-8") as f:
+    sites = json.load(f)
 
 if os.path.exists(DB_FILE):
     with open(DB_FILE, "r", encoding="utf-8") as f:
@@ -15,61 +14,87 @@ if os.path.exists(DB_FILE):
 else:
     old = {}
 
-print("LICZBA W BAZIE:", len(old))
+print("PLIK ISTNIEJE:", os.path.exists(DB_FILE))
+print("LICZBA GMIN:", len(sites))
+
+current = {}
 
 with sync_playwright() as p:
 
     browser = p.chromium.launch(headless=True)
 
-    page = browser.new_page()
+    for city, url in sites.items():
 
-    page.goto(URL, wait_until="networkidle")
+        print("\n" + "=" * 60)
+        print("SPRAWDZAM:", city)
+        print(url)
 
-    text = page.locator("body").inner_text()
+        try:
+
+            page = browser.new_page()
+
+            page.goto(url, wait_until="networkidle", timeout=60000)
+
+            text = page.locator("body").inner_text()
+
+            page.close()
+
+            matches = re.findall(
+                r"Przejdź do:\s*(.*?)\s+(Ogłoszony|Zakończony)\s+(\d{4}-\d{2}-\d{2})",
+                text,
+                re.DOTALL
+            )
+
+            print("ZNALEZIONO:", len(matches), "ogłoszeń")
+
+            current[city] = {}
+
+            for title, status, date in matches:
+
+                key = title.strip()
+
+                current[city][key] = {
+                    "status": status,
+                    "date": date
+                }
+
+        except Exception as e:
+
+            print("BLAD:", str(e))
+
+            current[city] = {}
 
     browser.close()
 
-matches = re.findall(
-    r"Przejdź do:\s*(.*?)\s+(Ogłoszony|Zakończony)\s+(\d{4}-\d{2}-\d{2})",
-    text,
-    re.DOTALL
-)
-
-current = {}
-
-for title, status, date in matches:
-
-    key = title.strip()
-
-    current[key] = {
-        "status": status,
-        "date": date
-    }
-
-print("LICZBA AKTUALNIE:", len(current))
-
 new_ads = []
 
-for title in current:
+for city in current:
 
-    if title not in old:
+    old_city = old.get(city, {})
+    current_city = current[city]
 
-        print("\nNIE ZNALEZIONO W BAZIE:")
-        print(repr(title))
+    for title in current_city:
 
-        new_ads.append(title)
+        if title not in old_city:
+
+            new_ads.append((city, title))
 
 if new_ads:
 
-    print("\nNOWE OGŁOSZENIA:\n")
+    print("\n")
+    print("=" * 60)
+    print("NOWE OGLOSZENIA")
+    print("=" * 60)
 
-    for ad in new_ads:
-        print(ad)
+    for city, title in new_ads:
+
         print()
+        print("GMINA:", city)
+        print(title)
 
 else:
 
-    print("Brak nowych ogłoszeń.")
+    print("\nBrak nowych ogłoszeń.")
 
 with open(DB_FILE, "w", encoding="utf-8") as f:
     json.dump(current, f, ensure_ascii=False, indent=2)
