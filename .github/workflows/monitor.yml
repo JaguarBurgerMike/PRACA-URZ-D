@@ -30,3 +30,4 @@ jobs:
           git diff --cached --quiet || git commit -m "update database"
 
           git push
+# test
