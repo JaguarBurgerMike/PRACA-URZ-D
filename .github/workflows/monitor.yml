@@ -19,3 +19,14 @@ jobs:
       - run: playwright install chromium
 
       - run: python monitor.py
+
+      - name: Commit database
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add database.json
+
+          git diff --cached --quiet || git commit -m "update database"
+
+          git push
