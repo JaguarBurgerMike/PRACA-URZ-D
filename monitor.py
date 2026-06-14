@@ -1,7 +1,11 @@
 from playwright.sync_api import sync_playwright
 import re
+import json
+import os
 
 URL = "https://bip.malopolska.pl/umbochnia,m,276530,nabor-na-stanowiska-urzednicze-konkursy.html"
+
+DB_FILE = "database.json"
 
 with sync_playwright() as p:
 
@@ -21,9 +25,43 @@ matches = re.findall(
     re.DOTALL
 )
 
-print("\nZNALEZIONE OGŁOSZENIA:\n")
+current = {}
 
 for title, status, date in matches:
-    print(f"[{date}] [{status}]")
-    print(title.strip())
-    print("-" * 50)
+
+    key = title.strip()
+
+    current[key] = {
+        "status": status,
+        "date": date
+    }
+
+if os.path.exists(DB_FILE):
+
+    with open(DB_FILE, "r", encoding="utf-8") as f:
+        old = json.load(f)
+
+else:
+    old = {}
+
+new_ads = []
+
+for title in current:
+
+    if title not in old:
+        new_ads.append(title)
+
+if new_ads:
+
+    print("\nNOWE OGŁOSZENIA:\n")
+
+    for ad in new_ads:
+        print(ad)
+        print()
+
+else:
+
+    print("Brak nowych ogłoszeń.")
+
+with open(DB_FILE, "w", encoding="utf-8") as f:
+    json.dump(current, f, ensure_ascii=False, indent=2)
