@@ -5,12 +5,17 @@ import os
 
 URL = "https://bip.malopolska.pl/umbochnia,m,276530,nabor-na-stanowiska-urzednicze-konkursy.html"
 
+DB_FILE = "database.json"
+
 print("PLIK ISTNIEJE:", os.path.exists(DB_FILE))
 
 if os.path.exists(DB_FILE):
     with open(DB_FILE, "r", encoding="utf-8") as f:
-        print("ZAWARTOSC BAZY:")
-        print(f.read()[:500])
+        old = json.load(f)
+else:
+    old = {}
+
+print("LICZBA W BAZIE:", len(old))
 
 with sync_playwright() as p:
 
@@ -41,19 +46,17 @@ for title, status, date in matches:
         "date": date
     }
 
-if os.path.exists(DB_FILE):
-
-    with open(DB_FILE, "r", encoding="utf-8") as f:
-        old = json.load(f)
-
-else:
-    old = {}
+print("LICZBA AKTUALNIE:", len(current))
 
 new_ads = []
 
 for title in current:
 
     if title not in old:
+
+        print("\nNIE ZNALEZIONO W BAZIE:")
+        print(repr(title))
+
         new_ads.append(title)
 
 if new_ads:
