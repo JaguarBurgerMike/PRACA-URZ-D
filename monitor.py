@@ -80,7 +80,11 @@ with sync_playwright() as p:
 print("\n")
 print("=" * 70)
 
-if new_ads:
+message = "🧪 TEST DISCORDA\n\nJeżeli widzisz tę wiadomość, webhook działa poprawnie."
+
+send_discord(message)
+
+print("Wyslano test Discorda")
 
     print("NOWE OGLOSZENIA")
 
