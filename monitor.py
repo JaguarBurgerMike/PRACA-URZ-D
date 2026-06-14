@@ -34,7 +34,11 @@ with sync_playwright() as p:
 
             page = browser.new_page()
 
-            page.goto(url, wait_until="networkidle", timeout=60000)
+            page.goto(
+                url,
+                wait_until="networkidle",
+                timeout=60000
+            )
 
             text = page.locator("body").inner_text()
 
@@ -64,7 +68,8 @@ with sync_playwright() as p:
 
         except Exception as e:
 
-            print("BLAD:", e)
+            print("BLAD:", city)
+            print(e)
 
     browser.close()
 
@@ -96,14 +101,12 @@ else:
 
     print("BRAK NOWYCH OGLOSZEN")
 
-    response = requests.post(
-        os.environ["DISCORD_WEBHOOK"],
-        json={"content": "🧪 TEST DISCORDA"}
-    )
-
-    print("STATUS:", response.status_code)
-
 print("=" * 70)
 
 with open(DB_FILE, "w", encoding="utf-8") as f:
-    json.dump(current, f, ensure_ascii=False, indent=2)
+    json.dump(
+        current,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
