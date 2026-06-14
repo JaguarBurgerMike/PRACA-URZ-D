@@ -1,12 +1,17 @@
-import requests
+from playwright.sync_api import sync_playwright
 
-url = "https://bip.malopolska.pl/umbochnia,m,276530,nabor-na-stanowiska-urzednicze-konkursy.html"
+URL = "https://bip.malopolska.pl/umbochnia,m,276530,nabor-na-stanowiska-urzednicze-konkursy.html"
 
-r = requests.get(
-    url,
-    headers={"User-Agent": "Mozilla/5.0"}
-)
+with sync_playwright() as p:
 
-print("STATUS:", r.status_code)
-print()
-print(r.text[:5000])
+    browser = p.chromium.launch(headless=True)
+
+    page = browser.new_page()
+
+    page.goto(URL, wait_until="networkidle")
+
+    print(page.title())
+
+    print(page.locator("body").inner_text()[:5000])
+
+    browser.close()
