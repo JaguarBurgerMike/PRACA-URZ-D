@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import os
 
+print("=== NOWA WERSJA SKRYPTU ===")
+
 DB_FILE = "database.json"
 
 with open("sites.json", "r", encoding="utf-8") as f:
@@ -33,34 +35,9 @@ for name, url in sites.items():
         href = a["href"]
         title = a.get_text(" ", strip=True)
 
-        if href.startswith("#"):
-            continue
+        print("LINK:", title, "|", href)
 
-        if len(title) < 20:
-            continue
-
-        current[href] = title
-
-    previous = database.get(name, {})
-
-    new_items = []
-
-    for href, title in current.items():
-        if href not in previous:
-            new_items.append((title, href))
-
-    if new_items:
-        print("\nNOWE WPISY:")
-
-        for title, href in new_items:
-            print(title)
-            print(href)
-            print()
-
-    else:
-        print("Brak nowych wpisów.")
-
-    database[name] = current
+    print("KONIEC TESTU")
 
 with open(DB_FILE, "w", encoding="utf-8") as f:
     json.dump(database, f, ensure_ascii=False, indent=2)
