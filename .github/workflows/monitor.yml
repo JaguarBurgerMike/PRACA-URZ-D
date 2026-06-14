@@ -27,6 +27,8 @@ jobs:
       - run: playwright install chromium
 
       - run: python monitor.py
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Commit database
         run: |
