@@ -5,7 +5,12 @@ import os
 
 URL = "https://bip.malopolska.pl/umbochnia,m,276530,nabor-na-stanowiska-urzednicze-konkursy.html"
 
-DB_FILE = "database.json"
+print("PLIK ISTNIEJE:", os.path.exists(DB_FILE))
+
+if os.path.exists(DB_FILE):
+    with open(DB_FILE, "r", encoding="utf-8") as f:
+        print("ZAWARTOSC BAZY:")
+        print(f.read()[:500])
 
 with sync_playwright() as p:
 
