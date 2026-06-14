@@ -30,17 +30,16 @@ for name, url in sites.items():
 
 for a in soup.find_all("a", href=True):
 
+    href = a["href"]
     title = a.get_text(" ", strip=True)
 
-    if len(title) < 15:
+    if href.startswith("#"):
         continue
 
-    current[a["href"]] = title
+    if len(title) < 20:
+        continue
 
-        if len(title) < 15:
-            continue
-
-        current[a["href"]] = title
+    current[href] = title
 
     previous = database.get(name, {})
 
