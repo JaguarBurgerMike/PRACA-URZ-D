@@ -1,5 +1,8 @@
 name: MONITOR TEST 999
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
 
