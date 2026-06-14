@@ -2,8 +2,18 @@ from playwright.sync_api import sync_playwright
 import json
 import re
 import os
+import requests
 
 DB_FILE = "database.json"
+
+def send_discord(message):
+
+    webhook = os.environ["DISCORD_WEBHOOK"]
+
+    requests.post(
+        webhook,
+        json={"content": message}
+    )
 
 with open("sites.json", "r", encoding="utf-8") as f:
     sites = json.load(f)
@@ -74,11 +84,17 @@ if new_ads:
 
     print("NOWE OGLOSZENIA")
 
+    message = "🚨 NOWE OGŁOSZENIA 🚨\n\n"
+
     for city, date, title in new_ads:
 
         print()
         print(f"[{city}] {date}")
         print(title)
+
+        message += f"[{city}] {date}\n{title}\n\n"
+
+    send_discord(message)
 
 else:
 
