@@ -28,8 +28,14 @@ for name, url in sites.items():
 
     current = {}
 
-    for a in soup.find_all("a", href=True):
-        title = a.get_text(" ", strip=True)
+for a in soup.find_all("a", href=True):
+
+    title = a.get_text(" ", strip=True)
+
+    if len(title) < 15:
+        continue
+
+    current[a["href"]] = title
 
         if len(title) < 15:
             continue
