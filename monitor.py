@@ -1,8 +1,21 @@
 from playwright.sync_api import sync_playwright
 import json
+import re
+import os
+
+DB_FILE = "database.json"
 
 with open("sites.json", "r", encoding="utf-8") as f:
     sites = json.load(f)
+
+if os.path.exists(DB_FILE):
+    with open(DB_FILE, "r", encoding="utf-8") as f:
+        old = json.load(f)
+else:
+    old = {}
+
+current = {}
+new_ads = []
 
 with sync_playwright() as p:
 
@@ -10,9 +23,11 @@ with sync_playwright() as p:
 
     for city, url in sites.items():
 
-        print("\n" + "=" * 80)
+        print("\n" + "=" * 70)
         print("SPRAWDZAM:", city)
-        print("=" * 80)
+        print("=" * 70)
+
+        current[city] = {}
 
         try:
 
@@ -22,12 +37,54 @@ with sync_playwright() as p:
 
             text = page.locator("body").inner_text()
 
-            print(text[:3000])
-
             page.close()
+
+            matches = re.findall(
+                r"Przejdź do:\s*(.*?)\s+(\d{4}-\d{2}-\d{2})",
+                text,
+                re.DOTALL
+            )
+
+            print("ZNALEZIONO:", len(matches), "pozycji")
+
+            for title, date in matches:
+
+                title = " ".join(title.split())
+
+                if len(title) < 15:
+                    continue
+
+                current[city][title] = {
+                    "date": date
+                }
+
+                if title not in old.get(city, {}):
+                    new_ads.append((city, date, title))
 
         except Exception as e:
 
-            print("BLAD:", str(e))
+            print("BLAD:", e)
 
     browser.close()
+
+print("\n")
+print("=" * 70)
+
+if new_ads:
+
+    print("NOWE OGLOSZENIA")
+
+    for city, date, title in new_ads:
+
+        print()
+        print(f"[{city}] {date}")
+        print(title)
+
+else:
+
+    print("BRAK NOWYCH OGLOSZEN")
+
+print("=" * 70)
+
+with open(DB_FILE, "w", encoding="utf-8") as f:
+    json.dump(current, f, ensure_ascii=False, indent=2)
