@@ -64,7 +64,7 @@ with sync_playwright() as p:
                 }
 
                 if title not in old.get(city, {}):
-                    new_ads.append((city, date, title))
+                    new_ads.append((city, date, title, url))
 
         except Exception as e:
 
@@ -82,13 +82,18 @@ if new_ads:
 
     message = "🚨 NOWE OGŁOSZENIA 🚨\n\n"
 
-    for city, date, title in new_ads:
+    for city, date, title, url in new_ads:
 
         print()
         print(f"[{city}] {date}")
         print(title)
 
-        message += f"[{city}] {date}\n{title}\n\n"
+        message += (
+            f"🏢 {city}\n"
+            f"📅 {date}\n"
+            f"📄 {title}\n"
+            f"🔗 {url}\n\n"
+        )
 
     response = requests.post(
         os.environ["DISCORD_WEBHOOK"],
