@@ -1,5 +1,5 @@
 {
-  "Bochnia": {
+  "Gmina Bochnia": {
     "URZĄD MIASTA BOCHNIA 32-700 BOCHNIA UL. KAZIMIERZA WIELKIEGO 2 OGŁASZA NABÓR NA WOLNE KIEROWNICZE STANOWISKO URZĘDNICZE SEKRETARZA MIASTA (K/M)* II Ogłoszony": {
       "date": "2026-06-23"
     },
@@ -31,7 +31,7 @@
       "date": "2025-09-11"
     }
   },
-  "Rzezawa": {
+  "Gmina Rzezawa": {
     "Wójt Gminy Rzezawa ogłasza nabór na wolne stanowisko Dyrektora (K/M) Samorządowego Żłobka oraz Oddziału Żłobka w Gminie Rzezawa.": {
       "date": "2026-05-15"
     },
@@ -45,7 +45,7 @@
       "date": "2026-01-23"
     }
   },
-  "Brzesko": {
+  "Gmina Brzesko": {
     "Ogłoszenie i zarządzenie nr 156/2026 Burmistrza Brzeska z dnia 18 czerwca 2026 r. w sprawie wszczęcia procedury naboru na stanowisko podinspektora/inspektora w wydziale Organizacyjno-Administracyjnym w Urzędzie Miejskim w Brzesku": {
       "date": "2026-06-18"
     },
@@ -56,7 +56,7 @@
       "date": "2026-02-10"
     }
   },
-  "Drwinia": {
+  "Gmina Drwinia": {
     "INFORMACJA O NIEROZSTRZYGNIĘCIU KONKURSU NA STANOWISKO: DYREKTORA ZESPOŁU SZKOLNO-PRZEDSZKOLNEGO W ŚWINIARACH": {
       "date": "2026-04-30"
     },
@@ -67,7 +67,7 @@
       "date": "2026-02-05"
     }
   },
-  "Klaj": {
+  "Gmina Klaj": {
     "WÓJT GMINY KŁAJ ogłasza nabór na wolne stanowisko Inspektora (K/M) w Referacie Infrastruktury Technicznej w Urzędzie Gminy w Kłaju 32-015 Kłaj 655": {
       "date": "2026-05-11"
     },
@@ -75,13 +75,13 @@
       "date": "2026-03-18"
     }
   },
-  "Gdow": {
+  "Gmina Gdow": {
     "Ogłoszenie o naborze": {
       "date": "2026-03-10"
     }
   },
-  "Lapanow": {},
-  "Zegocina": {
+  "Gmina Lapanow": {},
+  "Gmina Zegocina": {
     "Nabór na wolne stanowisko urzędznicze ekodoradca w Referacie Inwestycji i Ochrony Środowiska": {
       "date": "2026-06-24"
     },
@@ -89,8 +89,8 @@
       "date": "2026-06-16"
     }
   },
-  "Lipnica Murowana": {},
-  "Gnojnik": {
+  "Gmina Lipnica Murowana": {},
+  "Gmina Gnojnik": {
     "Nabór na stanowisko audytora wewnętrznego": {
       "date": "2026-06-23"
     },
@@ -113,7 +113,7 @@
       "date": "2026-04-27"
     }
   },
-  "Debno": {
+  "Gmina Debno": {
     "Zarzadzenie Nr 34W2025 Wójta Gminy Dębno z dnia 5 grudnia 2025 r. w sprawie ogłoszenia o naborze na wolne stanowisko urzędnicze - Audytora wewnętrzny": {
       "date": "2026-01-09"
     },
@@ -126,5 +126,119 @@
     "Zarządzenie Nr 4/W/2025 Wójta Gminy Dębno z dnia 5 lutego 2025 r. w sprawie: ogłoszenia o naborze na wolne stanowisko urzędnicze w Wydziale Organizacyjnym.": {
       "date": "2025-02-28"
     }
-  }
+  },
+  "Powiat Bochnia": {
+    "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Podinspektor (K/M) w Biurze Powiatowego Rzecznika Konsumentów pełny etat Ogłoszony": {
+      "date": "2026-06-23"
+    },
+    "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Inspektor (K/M) w Wydziale Ochrony Środowiska, Rolnictwa i Leśnictwa pełny etat Zakończony": {
+      "date": "2026-04-02"
+    },
+    "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Podinspektor (K/M) w Wydziale Geodezji i Kartografii - pełny etat Zakończony": {
+      "date": "2026-03-31"
+    }
+  },
+  "Powiat Wieliczka": {
+    "INFORMACJA O WYNIKU NABORU na stanowisko ds. gospodarki nieruchomościami w Wydziale Gospodarki Nieruchomościami": {
+      "date": "2026-06-11"
+    },
+    "INFORMACJA O WYNIKU NABORU na stanowisko ds. ochrony środowiska w Wydziale Środowiska": {
+      "date": "2026-06-02"
+    },
+    "INFORMACJA O WYNIKU NABORU na stanowisko ds. KSeF oraz obsługi kancelaryjnej systemu EZD PUW w Wydziale Kancelarii": {
+      "date": "2026-06-01"
+    },
+    "INFORMACJA O WYNIKU NABORU na stanowisko ds. postępowań administracyjnych w Wydziale Komunikacji i Transportu": {
+      "date": "2026-05-25"
+    },
+    "OGŁOSZENIE NABORU na stanowisko ds. gospodarki nieruchomościami (K/M) w Wydziale Gospodarki Nieruchomościami": {
+      "date": "2026-05-22"
+    },
+    "INFORMACJA O WYNIKU NABORU na stanowisko ds. gospodarki nieruchomościami (K/M)": {
+      "date": "2026-05-22"
+    },
+    "INFORMACJA O WYNIKU NABORU na stanowisko Powiatowego Konserwatora Zabytków": {
+      "date": "2026-05-13"
+    },
+    "OGŁOSZENIE NABORU na stanowisko ds. obsługi KSeF oraz obsługi kancelaryjnej systemu EZD PUW w Wydziale Kancelarii Starostwa": {
+      "date": "2026-05-11"
+    },
+    "OGŁOSZENIE NABORU na stanowisko ds. ochrony środowiska w Wydziale Środowiska": {
+      "date": "2026-05-06"
+    },
+    "OGŁOSZENIE NABORU na stanowisko ds. gospodarki nieruchomościami w Wydziale Gospodarki Nieruchomościami": {
+      "date": "2026-05-06"
+    }
+  },
+  "Powiat Brzesko": {
+    "OGŁOSZENIE O KONKURSIE - Powiat Brzeski ogłasza konkurs na stanowisko dyrektora Poradni Psychologiczno - Pedagogicznej w Brzesku, 32 – 800 Brzesko, ul. Piastowska 2B Ogłoszony": {
+      "date": "2026-05-08"
+    },
+    "Informacja o wyniku konkursu na stanowisko Dyrektora Poradni Psychologiczno - Pedagogicznej w Brzesku Zakończony": {
+      "date": "2026-06-19"
+    },
+    "Informacja o wyniku naboru kandydatów na wolne stanowisko urzędnicze - podinspektor w Wydziale Edukacji w Starostwie Powiatowym w Brzesku Zakończony": {
+      "date": "2026-05-08"
+    },
+    "Starosta Brzeski ogłasza nabór na wolne stanowisko urzędnicze w Wydziale Edukacji Ogłoszony": {
+      "date": "2026-04-13"
+    },
+    "Informacja o wyniku naboru kandydatów na wolne stanowisko urzędnicze - podinspektor w Wydziale Architektury, Budownictwa i Rozwoju Powiatu w Starostwie Powiatowym w Brzesku Zakończony": {
+      "date": "2026-02-12"
+    },
+    "Starosta Brzeski ogłasza nabór na wolne stanowisko urzędnicze w Wydziale Architektury, Budownictwa i Rozwoju Powiatu - stanowisko: podinspektor. Ogłoszony": {
+      "date": "2026-01-09"
+    }
+  },
+  "Powiat Tarnow": {
+    "Ogłoszenie o naborze na wolne stanowisko urzędnicze tj. Specjalistki / Specjalisty w Wydziale Edukacji, Kultury i Promocji (Wieloosobowe Stanowisko ds. planowania i realizacji budżetu) w wymiarze pełnego etatu Ogłoszony": {
+      "date": "2026-06-22"
+    },
+    "Informacja o wynikach naboru na wolne stanowisko urzędnicze tj. Specjalisty w Wydziale Urbanistyki, Architektury i Budownictwa (Wieloosobowe Stanowisko ds. obsługi z zakresu Prawa budowlanego i ustalania lokalizacji dróg publicznych) w Starostwie Powiatowym w Tarnowie w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-05-19"
+    },
+    "Informacja o wynikach naboru na wolne stanowisko urzędnicze tj. Specjalisty w Wydziale Rozwoju Powiatu (Wieloosobowe Stanowisko ds. przygotowania i realizacji projektów) w Starostwie Powiatowym w Tarnowie w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-04-28"
+    },
+    "Ogłoszenie o naborze na wolne stanowisko urzędnicze tj. Specjalistki / Specjalisty w Wydziale Urbanistyki, Architektury i Budownictwa (Wieloosobowe Stanowisko ds. obsługi z zakresu Prawa budowlanego i ustalania lokalizacji dróg publicznych) w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-04-22"
+    },
+    "Informacja o wynikach naboru na wolne stanowisko urzędnicze tj. Specjalisty w Wydziale Gospodarowania Nieruchomościami (Wieloosobowe Stanowisko ds. aktualizacji opłat rocznych z tytułu użytkowania wieczystego oraz przekształcania prawa użytkowania wieczystego w prawo własności) w Starostwie Powiatowym w Tarnowie w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-04-21"
+    },
+    "Informacja o wynikach naboru na wolne stanowisko urzędnicze tj. Specjalisty w Wydziale Gospodarowania Nieruchomościami (Wieloosobowe Stanowisko ds. zarządzania nieruchomościami Skarbu Państwa) w Starostwie Powiatowym w Tarnowie w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-04-21"
+    },
+    "Ogłoszenie o naborze na wolne stanowisko urzędnicze tj. Specjalistki / Specjalisty w Wydziale Rozwoju Powiatu (Wieloosobowe Stanowisko ds. przygotowania i realizacji projektów) w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-04-10"
+    },
+    "Informacja o wynikach naboru na wolne stanowisko urzędnicze tj. Specjalisty w Wydziale Rozwoju Powiatu (Wieloosobowe Stanowisko ds. przygotowania i realizacji projektów) w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-04-02"
+    },
+    "Informacja o wynikach naboru na wolne stanowisko urzędnicze tj. Specjalisty w Wydziale Księgowości (Wieloosobowe Stanowisko ds. kas) w Starostwie Powiatowym w Tarnowie w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-03-20"
+    },
+    "Ogłoszenie o naborze na wolne stanowisko urzędnicze tj. Specjalistki / Specjalisty w Wydziale Gospodarowania Nieruchomościami (Wieloosobowe Stanowisko ds. aktualizacji opłat rocznych z tytułu użytkowania wieczystego oraz przekształcania prawa użytkowania wieczystego w prawo własności) w wymiarze pełnego etatu Zakończony": {
+      "date": "2026-03-10"
+    }
+  },
+  "Powiat Myślenice": {
+    "Starosta Myślenicki ogłasza nabór nr 5/2026 na wolne stanowisko urzędnicze - Inspektora (K/M) w Wydziale Organizacyjnym i Komunikacji Społecznej Zakończony": {
+      "date": "2026-05-14"
+    },
+    "Starosta Myślenicki ogłasza nabór nr 4/2026 na wolne stanowisko urzędnicze - Podinspektor (K/M) w Wydziale Komunikacji Zakończony": {
+      "date": "2026-05-12"
+    },
+    "Starosta Myślenicki ogłasza nabór nr 3/2026 na wolne samodzielne stanowisko urzędnicze - Geolog Powiatowy (K/M) Zakończony": {
+      "date": "2026-03-10"
+    },
+    "Starosta Myślenicki ogłasza nabór nr 2/2026 na wolne stanowisko urzędnicze - Młodszy Referent (K/M) w Wydziale Komunikacji Zakończony": {
+      "date": "2026-03-03"
+    },
+    "Starosta Myślenicki ogłasza nabór nr 1/2026 na wolne stanowisko urzędnicze - Inspektor/Inspektorka ds. inwestycji i zamówień publicznych Zakończony": {
+      "date": "2026-01-16"
+    }
+  },
+  "Powiat Limanowa": {},
+  "PINB": {}
 }
