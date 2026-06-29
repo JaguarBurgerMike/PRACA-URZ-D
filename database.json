@@ -75,11 +75,7 @@
       "date": "2026-03-18"
     }
   },
-  "Gmina Gdow": {
-    "Ogłoszenie o naborze": {
-      "date": "2026-03-10"
-    }
-  },
+  "Gmina Gdow": {},
   "Gmina Lapanow": {},
   "Gmina Zegocina": {
     "Nabór na wolne stanowisko urzędnicze do spraw księgowości podatkowej i opłat, w Referacie Finansów i Budżetu w Urzędzie Gminy Żegocina.": {
@@ -131,6 +127,12 @@
     }
   },
   "Powiat Bochnia": {
+    "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Referent (K/M) w Wydziale Geodezji i Kartografii Referat Ewidencji Gruntów i Budynków pełny etat Ogłoszony": {
+      "date": "2026-06-29"
+    },
+    "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Referent (K/M) w Wydziale Spraw Społecznych i Zarządzania Kryzysowego pełny etat Ogłoszony": {
+      "date": "2026-06-29"
+    },
     "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Podinspektor (K/M) w Biurze Powiatowego Rzecznika Konsumentów pełny etat Ogłoszony": {
       "date": "2026-06-23"
     },
