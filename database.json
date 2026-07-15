@@ -3,7 +3,7 @@
     "URZĄD MIASTA BOCHNIA 32-700 BOCHNIA UL. KAZIMIERZA WIELKIEGO 2 OGŁASZA NABÓR NA WOLNE STANOWISKO URZĘDNICZE MŁODSZEGO REFERENTA (K/M)* W REFERACIE ARCHITEKTURY I PLANOWANIA PRZESTRZENNEGO Ogłoszony": {
       "date": "2026-07-07"
     },
-    "URZĄD MIASTA BOCHNIA 32-700 BOCHNIA UL. KAZIMIERZA WIELKIEGO 2 OGŁASZA NABÓR NA WOLNE KIEROWNICZE STANOWISKO URZĘDNICZE SEKRETARZA MIASTA (K/M)* II Ogłoszony": {
+    "URZĄD MIASTA BOCHNIA 32-700 BOCHNIA UL. KAZIMIERZA WIELKIEGO 2 OGŁASZA NABÓR NA WOLNE KIEROWNICZE STANOWISKO URZĘDNICZE SEKRETARZA MIASTA (K/M)* II Zakończony": {
       "date": "2026-06-23"
     },
     "URZĄD MIASTA BOCHNIA 32-700 BOCHNIA UL. KAZIMIERZA WIELKIEGO 2 OGŁASZA NABÓR NA WOLNE KIEROWNICZE STANOWISKO URZĘDNICZE SEKRETARZA MIASTA (K/M) Zakończony": {
@@ -90,6 +90,9 @@
   },
   "Gmina Lipnica Murowana": {},
   "Gmina Gnojnik": {
+    "Nabór na stanowisko audytora wewnętrznego": {
+      "date": "2026-06-23"
+    },
     "Nabór na stanowisko audytora wewnętrznego - informacja o wynikach": {
       "date": "2026-07-10"
     },
@@ -108,14 +111,8 @@
     "Nabór na stanowisko kierownicze w Gminnym Ośrodku Pomocy Społecznej w Gnojniku": {
       "date": "2026-06-25"
     },
-    "Nabór na stanowisko audytora wewnętrznego": {
-      "date": "2026-06-23"
-    },
     "Nabór na stanowisko ds. gospodarki odpadami komunalnymi w Referacie Gospodarki Przestrzennej i Ochrony Środowiska Urzędu Gminy Gnojnik": {
       "date": "2026-06-17"
-    },
-    "Nabór na stanowisko Dyrektora Centrum Kultury w Gnojniku - informacja o wynikach": {
-      "date": "2026-05-21"
     }
   },
   "Gmina Debno": {
