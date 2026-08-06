@@ -150,6 +150,9 @@
     }
   },
   "Powiat Wieliczka": {
+    "OGŁOSZENIE NABORU na stanowisko ds. prawnych w Biurze Prawnym": {
+      "date": "2026-08-06"
+    },
     "INFORMACJA O WYNIKU NABORU na stanowisko ds. gospodarki nieruchomościami w Wydziale Gospodarki Nieruchomościami": {
       "date": "2026-06-11"
     },
@@ -175,9 +178,6 @@
       "date": "2026-05-11"
     },
     "OGŁOSZENIE NABORU na stanowisko ds. ochrony środowiska w Wydziale Środowiska": {
-      "date": "2026-05-06"
-    },
-    "OGŁOSZENIE NABORU na stanowisko ds. gospodarki nieruchomościami w Wydziale Gospodarki Nieruchomościami": {
       "date": "2026-05-06"
     }
   },
