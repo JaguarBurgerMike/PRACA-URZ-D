@@ -171,6 +171,9 @@
     }
   },
   "Powiat Brzesko": {
+    "Małopolski Wojewódzki Inspektor Nadzoru Budowlanego ogłasza nabór kandydatów na stanowisko: POWIATOWEGO INSPEKTORA NADZORU BUDOWLANEGO W NOWYM TARGU Ogłoszony": {
+      "date": "2026-10-06"
+    },
     "Informacja o wyniku naboru kandydatów na wolne stanowisko urzędnicze - podinspektor w Powiatowym Zespole do Spraw Orzekania o Niepełnosprawności w Starostwie Powiatowym w Brzesku Ogłoszony": {
       "date": "2026-10-01"
     },
@@ -194,9 +197,6 @@
     },
     "Informacja o wyniku naboru kandydatów na wolne stanowisko urzędnicze - podinspektor ds. budownictwa w Wydziale Architektury, Budownictwa i Rozwoju Powiatu w Starostwie Powiatowym w Brzesku Zakończony": {
       "date": "2026-07-23"
-    },
-    "Informacja o wyniku naboru kandydatów na wolne stanowisko urzędnicze - podinspektor w Wydziale Architektury, Budownictwa i Rozwoju Powiatu w Starostwie Powiatowym w Brzesku Zakończony": {
-      "date": "2026-07-24"
     }
   },
   "Powiat Tarnow": {
@@ -245,6 +245,13 @@
       "date": "2026-01-16"
     }
   },
-  "Powiat Limanowa": {},
+  "Powiat Limanowa": {
+    "Konkurs na wolne stanowisko urzędnicze - podinspektor/podinspektorka w Wydziale Budownictwa i Architektury Ogłoszony": {
+      "date": "2026-10-06"
+    },
+    "Konkurs na wolne stanowisko urzędnicze – podinspektor w Wydziale Organizacji i Zdrowia Starostwa Powiatowego w Limanowej Zakończony": {
+      "date": "2026-03-27"
+    }
+  },
   "PINB": {}
 }
