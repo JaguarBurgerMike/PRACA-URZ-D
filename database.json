@@ -155,6 +155,9 @@
     }
   },
   "Powiat Wieliczka": {
+    "OGŁOSZENIE NABORU na stanowisko ds. ewidencji gruntów i budynków w Wydziale Geodezji i Kartografii": {
+      "date": "2026-11-09"
+    },
     "OGŁOSZENIE NABORU na stanowisko ds. udostępniania danych PZGiK w Wydziale Geodezji i Kartografii": {
       "date": "2026-11-06"
     },
@@ -181,9 +184,6 @@
     },
     "INFORMACJA O WYNIKU NABORU na stanowisko ds. gospodarki nieruchomościami (K/M)": {
       "date": "2026-05-22"
-    },
-    "INFORMACJA O WYNIKU NABORU na stanowisko Powiatowego Konserwatora Zabytków": {
-      "date": "2026-05-13"
     }
   },
   "Powiat Brzesko": {
