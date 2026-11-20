@@ -62,7 +62,7 @@
     }
   },
   "Gmina Klaj": {
-    "OGŁOSZENIE O NABORZE NA WOLNE STANOWISKO URZĘDNICZE w Referacie Infrastruktury Technicznej Ogłoszony": {
+    "OGŁOSZENIE O NABORZE NA WOLNE STANOWISKO URZĘDNICZE w Referacie Infrastruktury Technicznej Zakończony": {
       "date": "2026-10-27"
     },
     "WÓJT GMINY KŁAJ ogłasza nabór na wolne stanowisko Referenta (K/M) w m, w Urzędzie Gminy w Kłaju 32-015 Kłaj 655 Zakończony": {
@@ -137,7 +137,7 @@
     }
   },
   "Powiat Bochnia": {
-    "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Referent (K/M) w Biurze Informatyki, pełny etat Ogłoszony": {
+    "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Referent (K/M) w Biurze Informatyki, pełny etat Zakończony": {
       "date": "2026-10-30"
     },
     "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Referent (K/M) w Wydziale Geodezji i Kartografii Referat Ewidencji Gruntów i Budynków pełny etat Zakończony": {
@@ -186,6 +186,9 @@
     }
   },
   "Powiat Brzesko": {
+    "Informacja o wyniku naboru kandydatów na wolne stanowisko urzędnicze - podinspektor w Wydziale Komunikacji i Transportu w Starostwie Powiatowym w Brzesku Zakończony": {
+      "date": "2026-11-20"
+    },
     "Starosta Brzeski ogłasza nabór na wolne stanowisko urzędnicze w Wydziale Komunikacji i Transportu Ogłoszony": {
       "date": "2026-10-29"
     },
@@ -209,9 +212,6 @@
     },
     "Starosta Brzeski ogłasza nabór na wolne stanowisko urzędnicze w Wydziale Architektury, Budownictwa i Rozwoju Powiatu Ogłoszony": {
       "date": "2026-08-19"
-    },
-    "Starosta Brzeski ogłasza nabór na wolne stanowisko urzędnicze w Wydziale Organizacyjnym Ogłoszony": {
-      "date": "2026-08-17"
     }
   },
   "Powiat Tarnow": {
