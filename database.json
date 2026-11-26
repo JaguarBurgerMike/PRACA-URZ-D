@@ -94,17 +94,17 @@
   },
   "Gmina Lipnica Murowana": {},
   "Gmina Gnojnik": {
-    "Nabór na stanowisko audytora wewnętrznego": {
-      "date": "2026-07-15"
-    },
-    "Nabór na stanowisko głównego księgowego/głównej księgowej": {
-      "date": "2026-11-13"
+    "Nabór na stanowisko ds. wymiaru podatków": {
+      "date": "2026-11-26"
     },
     "Nabór na stanowisko ds. księgowości": {
-      "date": "2026-11-13"
+      "date": "2026-11-26"
     },
-    "Nabór na stanowisko ds. wymiaru podatków": {
-      "date": "2026-11-13"
+    "Nabór na stanowisko głównego księgowego/głównej księgowej": {
+      "date": "2026-11-26"
+    },
+    "Nabór na stanowisko audytora wewnętrznego": {
+      "date": "2026-07-15"
     },
     "Nabór na stanowisko audytora wewnętrznego - informacja o wynikach": {
       "date": "2026-07-10"
@@ -134,6 +134,12 @@
     }
   },
   "Powiat Bochnia": {
+    "Zarząd Powiatu w Bochni ogłasza nabór na wolne kierownicze stanowisko pracy: Dyrektor (K/M) Placówki opiekuńczo-wychowawczej typu socjalizacyjnego PERSPEKTYWA w Bochni 1/2 etatu Ogłoszony": {
+      "date": "2026-11-26"
+    },
+    "Zarząd Powiatu w Bochni ogłasza nabór na wolne kierownicze stanowisko pracy: Dyrektor (K/M) Placówki opiekuńczo-wychowawczej typu socjalizacyjnego AZYMUT w Bochni 1/2 etatu Ogłoszony": {
+      "date": "2026-11-26"
+    },
     "Starosta Bocheński ogłasza nabór na wolne stanowisko pracy: Referent (K/M) w Biurze Informatyki, pełny etat Zakończony": {
       "date": "2026-10-30"
     },
@@ -151,6 +157,9 @@
     }
   },
   "Powiat Wieliczka": {
+    "INFORMACJA O WYNIKU NABORU na stanowisko ds. udostępniania danych PZGiK w Wydziale Geodezji i Kartografii": {
+      "date": "2026-11-26"
+    },
     "OGŁOSZENIE NABORU na stanowisko ds. administracji architektoniczno-budowlanej w Wydziale Architektury i Budownictwa": {
       "date": "2026-11-19"
     },
@@ -177,9 +186,6 @@
     },
     "INFORMACJA O WYNIKU NABORU na stanowisko ds. postępowań administracyjnych w Wydziale Komunikacji i Transportu": {
       "date": "2026-05-25"
-    },
-    "OGŁOSZENIE NABORU na stanowisko ds. gospodarki nieruchomościami (K/M) w Wydziale Gospodarki Nieruchomościami": {
-      "date": "2026-05-22"
     }
   },
   "Powiat Brzesko": {
